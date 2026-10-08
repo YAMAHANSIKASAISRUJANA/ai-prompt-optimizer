@@ -52,19 +52,24 @@ The final string is whitespace-cleaned and returned along with the list of appli
 
 ```
 ai-prompt-optimizer/
-├── index.html              # HTML entry point
-├── package.json             # Dependencies and scripts
-├── vite.config.ts           # Vite configuration (with @ alias)
-├── tailwind.config.js       # Tailwind theme + custom animations
-├── postcss.config.js        # PostCSS setup
-├── tsconfig.json            # TypeScript configuration
-├── src/
-│   ├── main.tsx             # React app bootstrap
-│   ├── App.tsx              # Main UI component (header, card, footer)
-│   ├── index.css            # Tailwind directives
-│   ├── vite-env.d.ts        # Vite type declarations
-│   └── lib/
-│       └── optimizePrompt.ts  # Rule-based optimization engine
+├── index.html                 # HTML entry point
+├── package.json               # Dependencies and scripts
+├── package-lock.json          # Locked dependency versions
+├── vite.config.ts             # Vite configuration
+├── tailwind.config.js         # Tailwind theme + custom animations
+├── postcss.config.js          # PostCSS setup
+├── tsconfig.json              # TypeScript configuration
+├── eslint.config.js           # ESLint configuration
+├── project-config/
+│   ├── config.json            # Project configuration
+│   └── prompt                 # Project prompt/configuration
+└── src/
+    ├── main.tsx               # React app bootstrap
+    ├── App.tsx                # Main UI component
+    ├── index.css              # Tailwind CSS
+    ├── vite-env.d.ts          # Vite type declarations
+    └── lib/
+        └── optimizePrompt.ts  # Rule-based optimization engine
 ```
 
 ## Installation and Usage
